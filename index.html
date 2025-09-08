@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velknd.Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+
+<body onload="typeOut(), darkMode()" onresize="closeMenus4SmallScreens()">
+
+<div class="main-container">
+
+
+   <div class="grid-item" id="tl">
+    <!-- <div id="refresh-box">↺</div> -->
+   </div>
+
+   <div class="grid-item" id="tm"></div>
+
+   <div class="grid-item" id="tr">
+        <div class="darkmode-item" id="sun" onclick="lightMode()">☼</div>
+        <div class="darkmode-item" id="moon" onclick="darkMode()">☾</div>
+        <div class="darkmode-padding"></div>
+    </div>
+
+   <div class="grid-item" id="cl"></div>
+
+   <div class="grid-item" id="centre-panel">
+
+        <div class="main-title-group">
+            <h1 id="main-title-text" onclick="showMenu('menu')">VELKND.STUDIO</h1>
+            <img id="black-star-1" src="blackStar.png">
+            <img id="black-star-2" src="blackStar.png">
+        </div>
+   </div>
+
+    <div class="grid-item" id="accordion">
+
+        <div class="card">
+    <div class="card-header" id="please">
+      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+        ABOUT
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body"><p>
+       Velknd Studio is a web development studio based in Brighton, UK.<br><br>
+            
+        We specialize in building bespoke, hand-coded websites for small businesses and creatives. <br><br>
+
+        From simple landing pages to fully featured websites, there is something to suit every budget and requirement. <br><br>
+
+    <span id="highlight">Get in touch today</span> to discuss your project.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="please">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        WORK
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+        <a href="https://wyattaudiouk.com/" target="_blank">
+            <p class="sitelink">wyattaudiouk.com</p>
+        </a>
+
+        <a href="https://quakingaspensmusic.com" target="_blank">
+            <p class="sitelink">quakingaspensmusic.com</p>
+        </a>
+
+        <a href="https://jjnexus.com" target="_blank">
+            <p class="sitelink">jjnexus.com</p>
+        </a>
+
+
+        <a href="https://samandthestonecircle.github.io/stoneswords0/" target="_blank">
+            <p class="sitelink">stone-swords.com</p>
+        </a>
+
+        <p class="sitelink">...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="please">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+        CONTACT
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+      <div class="card-body">
+       <a href="mailto:velknd.studio@gmail.com">
+            <p>velknd.studio@gmail.com
+
+
+            </p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+        
+   </div>
+
+   <div class="grid-item" id="cr"></div>
+   <div class="grid-item" id="bl"></div>
+   <div class="grid-item" id="bm"></div>
+
+  
+
+   <div class="grid-item" id="br"></div>
+ 
+</div>
+
+</body>
+
+<!-- MAIN MENU -->
+
+<div id="menu">
+
+    <div id="menuheader">
+        <p id="close-menu" onclick="closeMenu('menu')">☒</p>
+    </div>
+
+    <div class="menu-item" onclick="showMenu('about')">ABOUT ⭷</div>
+    <div class="menu-item" onclick="showMenu('work')">WORK ⭷</div>
+    <div class="menu-item" onclick="showMenu('contact')">CONTACT ⭷</div>
+
+          
+</div>
+
+<!-- ABOUT -->
+
+
+<div id="about">
+
+    <div id="aboutheader">
+        <p id="close-menu" onclick="closeMenu('about')">☒</p>
+    </div>
+
+    <div class="about-container">
+        <p id="about-text">Velknd Studio is a web development studio based in Brighton, UK.<br><br>
+            
+        We specialize in building bespoke, hand-coded websites for small businesses and creatives. <br><br>
+
+        From simple landing pages to fully featured websites, there is something to suit every budget and requirement. <br><br>
+
+    <span id="highlight" onclick="showMenu('contact')">Get in touch today</span> to discuss your project.</p>
+
+    <!-- <img id="spiky-circle" src="circle1.png"> -->
+    </div>
+
+</div>
+
+<!-- WORK -->
+
+<div id="work">
+
+    <div id="workheader">
+        <p id="close-menu" onclick="closeMenu('work')">☒</p>
+    </div>
+
+    <div class="work-container">
+
+        <a href="https://wyattaudiouk.com/" target="_blank">
+            <p class="sitelink">wyattaudiouk.com</p>
+        </a>
+
+         <a href="https://quakingaspensmusic.com" target="_blank">
+            <p class="sitelink">quakingaspensmusic.com</p>
+        </a>
+
+        <a href="https://jjnexus.com" target="_blank">
+            <p class="sitelink">jjnexus.com</p>
+        </a>
+
+       
+
+        <a href="https://samandthestonecircle.github.io/stoneswords0/" target="_blank">
+            <p class="sitelink">stone-swords.com</p>
+        </a>
+
+        <p class="sitelink">...<br></p>
+
+       <!-- <div id="chain-container">
+            <div class="chain-scroll">
+                <img class="chains" src="chain.webp" />
+                <img class="chains" src="chain.webp" />
+                <img class="chains" src="chain.webp" />
+                <img class="chains" src="chain.webp" />
+              </div>
+        </div> -->
+    </div>
+
+    
+
+</div>
+
+
+
+
+<!-- CONTACT -->
+
+<div id="contact">
+
+    <div id="contactheader">
+        <p id="close-menu" onclick="closeMenu('contact')">☒</p>
+    </div>
+
+    <div class="contact-container">
+        <a href="mailto:velknd.studio@gmail.com">
+            <p>velknd.studio@gmail.com
+
+
+            </p>
+        </a>
+    </div>
+
+</div>
+
+
+
+
+</html>
